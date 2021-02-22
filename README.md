@@ -57,10 +57,10 @@ structures by referring Algorithms of UNNIX operating system.
 </p>
 
 # RAM Section :
-**u AREA :**<br />
+- **u AREA :**<br />
 The u area contains information specific to the process (e.g., open files, current directory, signal actions, accounting information) and a system stack segment for process use. u Area is such region by using which kernel can access any process.
 
-**File descriptors :**<br />
+ - **File descriptors :**<br />
 In Unix and related computer operating systems, a file descriptor is an abstract indicator used to access a file or other input/output resourc. A file descriptor is a non-negative integer, generally represented in the C programming language as the type int (negative values being reserved to indicate "no value" or an error condition).Normally, a process inherits three open file descriptors when it is started by the shell: descriptor 0 is standard input, the file from which the process takes its input; descriptor 1 is standard output, the file to which the process writes its output; and descriptor 2 is standard error, the file to which the process writes error messages and notification of exceptional or abnormal conditions. In an interactive shell or program, these three descriptors are normally connected to the terminal. In the stdio library, these descriptors correspond to the file streams stdin, stdout, and stderr.
 
 **UFDT :**<br />
