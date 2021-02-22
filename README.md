@@ -77,12 +77,22 @@ Whenever a file is opened, its corresponding Inode is copied in main memory from
 The kernel keeps yet another table, this table contains a copy of the inode for the file and refernce to that file.
 
 # Hard Disk Section :
+
+<p align="center">
+  <img src="https://github.com/OmkarRatnaparkhi/Customized_Virtual_File_System/blob/main/Assets/Diagram2.png">
+</p>
+
 **Boot Block :**<br />
- A dedicated block usually at the beginning (first block) of a storage medium that holds special data used to start a system. The boot block contains the initial bootstrap program used to load the operating system.
+A dedicated block usually at the beginning (first block) of a storage medium that holds special data used to start a system. The boot block contains the initial bootstrap program used to load the operating system.
  
- **Super block :**<br />
+**Super block :**<br />
 A super block describes the state of the file system: the total size of the partition, the block size, list of free blocks, the inode number of the root directory.
 A superblock is a collection of metadata used to show the properties of file systems. It keeps record of empty blocks present on harddisk , how many inode are filled with data etc.
 
+**Disk inode list block :**<br />
+It is a linear linked list of inodes. There is a one to one mapping of files to inodes and vice versa. An inode is identified by its "inode number", which contains the information needed to find the inode itself on the disk. Thus, while users think of files in terms of file names, Unix thinks of files in terms of inodes.
+
 **Data blocks:**<br />
 data blocks contains the actual contents os data of files.
+
+
