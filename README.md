@@ -39,7 +39,7 @@ structures by referring Algorithms of UNNIX operating system.
 * By using this project we can get overview of UFS (UNIX File System) on any platform.
 
 # What is File and File System ?
-* File is unformated uniform stream of bytes
+* File is unformated uniform stream of bytes.
 * File system is the way of storing and retriving the files into the harddisk.
 
 # Important System calls of File subsystems :
@@ -67,11 +67,10 @@ In Unix and related computer operating systems, a file descriptor is an abstract
 There is a File Descriptor table per process in the u area. A file descriptor entry contains a pointer to a file table entry.
 
 **File Table :**<br />
-The system needs to keep track of each "connection" to a file. Since the same file may have many open connections, this "connection" is truly distinct from the concept of a file. Since distinct processes may even share a connections (say two processes wanted to write to the same log file, each adding new data to the end of the file), the "connection" information cannot be kept inside the process table. So the kernel keeps a data structure called the system open-file table which has an entry for each connection. Each entry contains the connection status, e.g. read or write, the current offset in the file, and a pointer to a vnode, which is the OS's structure representing the file, irrespective of where in the file you may currently be looking
+The system needs to keep track of each "connection" to a file. Since the same file may have many open connections, this "connection" is truly distinct from the concept of a file. Since distinct processes may even share a connections (say two processes wanted to write to the same log file, each adding new data to the end of the file), the "connection" information cannot be kept inside the process table. So the kernel keeps a data structure called the system open-file table which has an entry for each connection. Each entry contains the connection status, e.g. read or write, the current offset in the file, and a pointer to a vnode, which is the OS's structure representing the file, irrespective of where in the file you may currently be looking.
 
 **Inode :**<br />
-Inode is structure which holds information about file such as the access mode (read, write, execute permissions), ownership, file type, file size, group, number of links, etc. Each inode is identified by an integer number. An inode is assigned to a file when it is created.
-Whenever a file is opened, its corresponding Inode is copied in main memory from the disk. So the inode residing on the disk is called disk inode & the one on main memory is called Incore inode.
+Inode is structure which holds information about file such as the access mode (read, write, execute permissions), ownership, file type, file size, group, number of links, etc. Each inode is identified by an integer number. An inode is assigned to a file when it is created. Whenever a file is opened, its corresponding Inode is copied in main memory from the disk. So the inode residing on the disk is called disk inode & the one on main memory is called Incore inode.
 
 **Incore Inode Table :**<br />
 The kernel keeps yet another table, this table contains a copy of the inode for the file and refernce to that file.
