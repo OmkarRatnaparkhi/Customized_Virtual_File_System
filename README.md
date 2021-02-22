@@ -43,6 +43,7 @@ structures by referring Algorithms of UNNIX operating system.
 * File system is the way of storing and retriving the files into the harddisk.
 
 # Important System calls of File subsystems :
+In this project, system calls are implemented not called.
 * open() : It is used to open existing file.
 * close() : It is used to close already opened file.
 * read() : It isused to read the data from file.
