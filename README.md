@@ -51,7 +51,7 @@ structures by referring Algorithms of UNNIX operating system.
 * creat() : It is used to create new reular file.
 
 
-
+# Diagramatic representation of File System 
 
 <p align="center">
   <img src="https://github.com/OmkarRatnaparkhi/Customized_Virtual_File_System/blob/main/Assets/Diagram1.png" alt="Diagram1">
