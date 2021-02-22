@@ -95,4 +95,8 @@ It is a linear linked list of inodes. There is a one to one mapping of files to 
 **Data blocks:**<br />
 data blocks contains the actual contents os data of files.
 
+# Diagramatic representation of Customized Virtual File System
 
+<p align="center">
+  <img src="https://github.com/OmkarRatnaparkhi/Customized_Virtual_File_System/blob/main/Assets/Diagram3.png" alt="Diagram1">
+</p>
