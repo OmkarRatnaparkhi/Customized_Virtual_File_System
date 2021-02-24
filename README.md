@@ -84,6 +84,7 @@ The kernel keeps yet another table, this table contains a copy of the inode for 
 
  - **Boot Block :**<br />
 A dedicated block usually at the beginning (first block) of a storage medium that holds special data used to start a system. The boot block contains the initial bootstrap program used to load the operating system.
+Note : In this project we are not considering boot as block as opearting system is already started and process of project is running on RAM i.e virtually. 
  
  - **Super block :**<br />
 A super block describes the state of the file system: the total size of the partition, the block size, list of free blocks, the inode number of the root directory.
