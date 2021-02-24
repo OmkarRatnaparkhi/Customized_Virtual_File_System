@@ -23,7 +23,7 @@ Command User Interface
 None
 
 **Technology used :**
-C&C++ programming
+C programming
 
 # About Virtual File System :
 * In this project we emulate all data structures which are used by operating system to
