@@ -731,7 +731,7 @@ int ReadFile(int fd, char *arr,int isize)
 		return -4;
 	}
 	
-	read_size = (UFDTArr[fd].ptrfiletable->ptrinode->FileActualSize) - (UFDTArr[fd].ptrfiletable->readoffset); ////////nahi kalali hi line
+	read_size = (UFDTArr[fd].ptrfiletable->ptrinode->FileActualSize) - (UFDTArr[fd].ptrfiletable->readoffset); 
 	
 	if(read_size < isize)
 	{
